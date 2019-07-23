@@ -6,7 +6,7 @@ include resume-mixins.pug
   .main-block
     h1 Patrick James Gosack
     .subtitle ELECTRICAL ENGINEER
-    p Prior <em>military</em> electrical and system engineer. Employed in the nuclear industry with a new-found passion for software engineering. Experienced with online, operations-critical troubleshooting, component level rework with standard bench instruments and <em>root cause analysis</em>. Outside of work, I enjoy reading, playing music with friends and travelling to exotic, unconventional places.
+    p Prior <em>military</em> electrical and system engineer. Employed in the nuclear industry with a new-found passion for software engineering. Experienced with online, operations-critical troubleshooting, component level rework and <em>root cause analysis</em>. Outside of work, I enjoy reading, playing music with friends and travelling to exotic, unconventional places.
 
 
   .main-block
@@ -21,8 +21,7 @@ include resume-mixins.pug
     +item("Songify", "Implementation of Spotify Front-End built with React/MongoDB, deployed with Amazon EC2")
       :markdown-it
         - Utilized service oriented architecture to maintain clear separation of concerns and loosely coupled components 
-        - Complete Code Test Coverage with Continuous Integration (Jest/Enzyme/Circle CI)
-
+        - Complete code test coverage with continuous integration (Jest/Enzyme/Circle CI)
 
   .main-block.concise
     h2 #[i.fa.fa-graduation-cap] Education
@@ -37,10 +36,10 @@ include resume-mixins.pug
     +item("System Engineer", "Palo Verde Nuclear Generating Station", "Tonopah Arizona", "-Now-", "2014")
       .description Relationship of the number with the answer to life, the universe and everything
       :markdown-it
-        - Performed emergent troubleshooting and design validation for the operations critical Control Element Drive Mechanism Control System
         - Provide validation, HDL models, simulation and documentation of locally reverse engineered electronics to combat obsolescence
         - Automated plant critical data collection from system continuous monitoring instruments
         - Experienced bench technician; proficient with electronics troubleshooting and rework
+        - Performed emergent troubleshooting and design validation for the operations critical Control Element Drive Mechanism Control System
 
 
     +item("Security Forces", "United States Air Force", "Domestic and International",  "2010", "2006")
@@ -57,40 +56,41 @@ include resume-mixins.pug
       li #[i.fa.fa-github] zibmcnib
     h1 Contact Info
     ul
-      li #[i.fa.fa-map-marker] Phoenix
       li #[i.fa.fa-linkedin] in/patrickgosack
       li #[i.fa.fa-envelope] gosack@gmail.com
       li #[i.fa.fa-phone] 928.221.1988
+      li #[i.fa.fa-map-marker] Phoenix
 
   #skills.side-block
     h1 Skills
     h2 Languages and Frameworks
     ul
-      li C
+      li Javascript ES6
       li MATLAB
       li VHDL
-      li Javascript ES6
       li React
       li Redux
       li Node.js
       li Pug
+      li C
     h2 Databases
     ul
-      li mySQL
       li MongoDB
+      li mySQL
     h2 Tools
     ul
       li GNU/Linux
-      li Jest
       li CircleCI
+      li Jest
       li git
+      li npm
     h2 Engineering
     ul
+      li Component Level Rework
       li Root Cause Analysis
       li System Engineering
       li Trending
       li Analytics
-      li Component Level Rework
 
 style
   include resume.scss
