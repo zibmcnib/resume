@@ -1,0 +1,96 @@
+include resume-mixins.pug
+
+#main
+  .subtitle
+
+  .main-block
+    h1 Patrick James Gosack
+    .subtitle ELECTRICAL ENGINEER
+    p Prior <em>military</em> electrical and system engineer. Employed in the nuclear industry with a new-found passion for software engineering. Experienced with online, operations-critical troubleshooting, component level rework with standard bench instruments and <em>root cause analysis</em>. Outside of work, I enjoy reading, playing music with friends and travelling to exotic, unconventional places.
+
+
+  .main-block
+    h2 #[i.fa.fa-folder-open] Software Engineering Projects 
+
+    +item("System Design Capstone", "Lorem ipsum dolor sit amet, consectetur adipiscing elit")
+      :markdown-it
+        - Fought back one of the largest wilding armies ever.
+        - Stepped up when the commander was down.
+        - Events led to my nomination as Lord Commander
+
+    +item("Songify", "Implementation of Spotify Front-End built with React/MongoDB, deployed with Amazon EC2")
+      :markdown-it
+        - Utilized service oriented architecture to maintain clear separation of concerns and loosely coupled components 
+        - Complete Code Test Coverage with Continuous Integration (Jest/Enzyme/Circle CI)
+
+
+  .main-block.concise
+    h2 #[i.fa.fa-graduation-cap] Education
+
+    +item("Software Engineering Immersive", "Hack Reactor", "Phoenix Arizona", "2019")
+    +item("BS Electrical Engineering | BA International Affairs", "Northern Arizona University", "Flagstaff Arizona", "2015", "2011")
+    +item("German Language Immersive", "Leuphana Universität", "Lüneburg Germany", "2011")
+
+  .main-block.concise
+    h2 #[i.fa.fa-thumbs-o-up] Employment
+
+    +item("System Engineer", "Palo Verde Nuclear Generating Station", "Tonopah Arizona", "-Now-", "2014")
+      .description Relationship of the number with the answer to life, the universe and everything
+      :markdown-it
+        - Performed emergent troubleshooting and design validation for the operations critical Control Element Drive Mechanism Control System
+        - Provide validation, HDL models, simulation and documentation of locally reverse engineered electronics to combat obsolescence
+        - Automated plant critical data collection from system continuous monitoring instruments
+        - Experienced bench technician; proficient with electronics troubleshooting and rework
+
+
+    +item("Security Forces", "United States Air Force", "Domestic and International",  "2010", "2006")
+      .description Made the bed, folded the towels, listened a lot.
+      :markdown-it
+        - Deployed twice to AOR in support of Operation Iraqi Freedom; Operation Enduring Freedom
+        - Member of Restricted Area Maintenance Team; performed time critical repairs to security sensitive electronics in a resource limited expeditionary environment
+
+
+#sidebar
+  #contact.side-block
+    h1 Portfolio
+    ul
+      li #[i.fa.fa-github] zibmcnib
+    h1 Contact Info
+    ul
+      li #[i.fa.fa-map-marker] Phoenix
+      li #[i.fa.fa-linkedin] in/patrickgosack
+      li #[i.fa.fa-envelope] gosack@gmail.com
+      li #[i.fa.fa-phone] 928.221.1988
+
+
+  #skills.side-block
+    h1 Skills
+    h2 Languages and Frameworks
+    ul
+      li C
+      li MATLAB
+      li VHDL
+      li Javascript
+      li React
+      li Redux
+      li Node.js
+    h2 Databases
+    ul
+      li mySQL
+      li MongoDB
+    h2 Tools
+    ul
+      li GNU/Linux
+      li Jest
+      li CircleCI
+      li git
+    h2 Engineering
+    ul
+      li Root Cause Analysis
+      li System Engineering
+      li Trending
+      li Analytics
+      li Component Level Rework
+
+style
+  include resume.scss
