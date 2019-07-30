@@ -6,11 +6,10 @@ include resume-mixins.pug
   .main-block
     h1 Patrick James Gosack
     .subtitle ELECTRICAL ENGINEER
-    p Prior military electrical and system engineer. Employed in the nuclear industry with a new-found passion 
-      | for software engineering. Experienced with online, operations-critical troubleshooting, component level 
-      | rework and root cause analysis. Outside of work, I enjoy reading, playing music with friends and travelling 
-      | to exotic, unconventional places.
-
+    p Prior military electrical and system engineer with a new-found passion for software engineering. 
+      | I love software engineering for its low barrier to entry for creating complex and useful applications.
+      | I am an artistic person that is passionate about engineering and find tremendous job satisfaction from creating tools for others.
+      | In addition, I am experienced with operations-critical troubleshooting, component level rework and root cause analysis. 
 
   .main-block
     h2 #[i.fa.fa-folder-open] Software Engineering Projects 
@@ -37,7 +36,7 @@ include resume-mixins.pug
     h2 #[i.fa.fa-thumbs-o-up] Employment
 
     +item("System Engineer", "Palo Verde Nuclear Generating Station", "Tonopah Arizona", "-Now-", "2014")
-      .description Relationship of the number with the answer to life, the universe and everything
+      // .description Relationship of the number with the answer to life, the universe and everything
       :markdown-it
         - Provide validation, HDL models, simulation and documentation of locally reverse engineered electronics to combat obsolescence
         - Automated plant critical data collection from system continuous monitoring instruments
@@ -45,8 +44,8 @@ include resume-mixins.pug
         - Performed emergent troubleshooting and design validation for the operations critical Control Element Drive Mechanism Control System
 
 
-    +item("Security Forces", "United States Air Force", "Domestic and International",  "2010", "2006")
-      .description Made the bed, folded the towels, listened a lot.
+    +item("Security Forces Specialist", "United States Air Force", "Domestic and International",  "2010", "2006")
+      // .description Made the bed, folded the towels, listened a lot.
       :markdown-it
         - Deployed twice to AOR in support of Operation Iraqi Freedom; Operation Enduring Freedom
         - Member of Restricted Area Maintenance Team; performed time critical repairs to security sensitive electronics in a resource limited expeditionary environment
@@ -69,30 +68,30 @@ include resume-mixins.pug
     ul
       li Javascript ES6
       li MATLAB
-      li VHDL
-      li React
-      li Redux
       li Node.js
+      li Redux
+      li React
+      li VHDL
       li Pug
       li C
     h2 Databases
     ul
+      li Cassandra
+      li MongoDB
       li MariaDB
       li mySQL
-      li MongoDB
-      li Cassandra
     h2 Tools
     ul
       li GNU/Linux
-      li CircleCI
       li Webpack
+      li CircleCI
+      li npm
       li Jest
       li git
-      li npm
     h2 Engineering
     ul
-      li Test Driven Development
       li Component Level Rework
+      li Test Driven Development
       li Root Cause Analysis
       li System Engineering
       li Trending
