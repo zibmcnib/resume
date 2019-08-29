@@ -5,7 +5,7 @@ include resume-mixins.pug
 
   .main-block
     h1 Patrick James Gosack
-    .subtitle ELECTRICAL ENGINEER
+    .subtitle ELECTRICAL/SOFTWARE ENGINEER
     p Prior military electrical and system engineer with a new-found passion for software engineering. 
       | I love software engineering for its low barrier to entry for creating complex and useful applications.
       | I am an artistic person with a passion for engineering. I find tremendous job satisfaction from creating tools for others.
@@ -14,11 +14,16 @@ include resume-mixins.pug
   .main-block
     h2 #[i.fa.fa-folder-open] Software Engineering Projects 
 
-    +item("System Design Capstone", "Lorem ipsum dolor sit amet, consectetur adipiscing elit")
+    +item("PSA Tracker", "Tool for maintaining configuration management of Palo Verde NGS Power Switch Assemblies")
       :markdown-it
-        - Fought back one of the largest wilding armies ever.
-        - Stepped up when the commander was down.
-        - Events led to my nomination as Lord Commander
+        - Used React to create a visual heatmap of current status of site PSAs with Hooks for state-management 
+        - Software used in site plant status to update stakeholders of status of $6M worth of rod-control equipment
+
+    +item("Zallow", "Implementation of Zillow with emphasis on a robust backend")
+      :markdown-it
+        - Tuned MariaDB database with Redis cache
+        - Designed for horizonal scaling, instances of microservices loadbalanced with NGINX
+        - Use of Docker containers and BASH scripts/Terraform for trivial deployment
 
     +item("Songify", "Implementation of Spotify Front-End built with React/MongoDB, deployed with Amazon EC2")
       :markdown-it
@@ -35,8 +40,7 @@ include resume-mixins.pug
   .main-block.concise
     h2 #[i.fa.fa-thumbs-o-up] Employment
 
-    +item("System Engineer", "Palo Verde Nuclear Generating Station", "Tonopah Arizona", "-Now-", "2014")
-      // .description Relationship of the number with the answer to life, the universe and everything
+    +item("System Engineer", "Palo Verde Nuclear Generating Station", "Tonopah Arizona", "Now", "2014")
       :markdown-it
         - Provide validation, HDL models, simulation and documentation of locally reverse engineered electronics to combat obsolescence
         - Automated plant critical data collection from system continuous monitoring instruments
@@ -65,7 +69,7 @@ include resume-mixins.pug
     h1 Skills
     h2 Languages and Frameworks
     ul
-      li Javascript ES6
+      li ECMAScript
       li MATLAB
       li Node.js
       li Redux
@@ -82,6 +86,7 @@ include resume-mixins.pug
     h2 Tools
     ul
       li GNU/Linux
+      li Terraform
       li Webpack
       li CircleCI
       li Docker
